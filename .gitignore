@@ -1,0 +1,52 @@
+# ---------------------------------------------------------------------------
+# ReverseAPK - local artifacts
+# ---------------------------------------------------------------------------
+
+# Session workspaces and build output
+workspaces/
+build/
+dist/
+*.tmp
+*.log
+
+# Downloaded / portable toolchain binaries (run the setup scripts instead)
+tools/
+
+# Sample APKs are generated locally by scripts/build-sample-apk.ps1
+samples/*
+!samples/.gitkeep
+*.apk
+*.apk.idsig
+*.idsig
+
+# Machine specific toolchain paths and local MCP registration
+config/toolchain.json
+.roo/mcp.json
+
+# Secrets and signing material
+.env
+.env.local
+*.keystore
+*.jks
+*.p12
+*.pfx
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Editors and OS
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+Desktop.ini
+.DS_Store

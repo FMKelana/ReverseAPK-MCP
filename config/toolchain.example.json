@@ -1,0 +1,16 @@
+{
+  "$comment": "Copy this file to config/toolchain.json and adjust the paths for your machine. Entries may be empty: the server then falls back to PATH lookup and to the build-tools folder next to aapt2. Environment variables such as %REVERSEAPK_HOME% are expanded before use.",
+  "java": "",
+  "keytool": "",
+  "apktool": "%REVERSEAPK_HOME%/tools/apktool/apktool.bat",
+  "jadx": "%REVERSEAPK_HOME%/tools/jadx/bin/jadx.bat",
+  "aapt2": "",
+  "aapt": "",
+  "apksigner": "",
+  "zipalign": "",
+  "dexdump": "",
+  "adb": "",
+  "gradle": "",
+  "frida": "",
+  "ghidra_headless": ""
+}

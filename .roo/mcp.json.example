@@ -1,0 +1,54 @@
+{
+  "mcpServers": {
+    "reverseapk": {
+      "command": "<REPO_ROOT>/mcp-server/.venv/Scripts/python.exe",
+      "args": [
+        "-m",
+        "reverseapk_mcp"
+      ],
+      "cwd": "<REPO_ROOT>/mcp-server",
+      "env": {
+        "REVERSEAPK_HOME": "<REPO_ROOT>",
+        "PYTHONPATH": "<REPO_ROOT>/mcp-server/src",
+        "PYTHONUTF8": "1"
+      },
+      "alwaysAllow": [
+        "env_check",
+        "session_create",
+        "session_list",
+        "session_info",
+        "apk_hash",
+        "apk_info",
+        "apktool_decode",
+        "jadx_decompile",
+        "manifest_decode",
+        "smali_list",
+        "smali_read",
+        "decode_pipeline",
+        "index_build",
+        "code_search",
+        "code_read",
+        "callgraph",
+        "apktool_build",
+        "zipalign_apk",
+        "apksign_apk",
+        "rebuild_and_sign",
+        "gradle_build",
+        "apk_install",
+        "smoke_test",
+        "framework_detect",
+        "native_lib_list",
+        "strings_scan",
+        "dexdump_summary",
+        "apk_signature_info",
+        "ghidra_headless",
+        "frida_enumerate",
+        "frida_run_script",
+        "jadx_export_gradle",
+        "kotlin_scaffold",
+        "fidelity_check",
+        "reconstruction_plan"
+      ]
+    }
+  }
+}
