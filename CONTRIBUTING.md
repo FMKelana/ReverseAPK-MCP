@@ -11,8 +11,8 @@ described in [LEGAL.md](LEGAL.md).
 ## Development setup
 
 ```powershell
-git clone https://github.com/FMKelana/ReverseAPK.git
-cd ReverseAPK
+git clone https://github.com/FMKelana/ReverseAPK-MCP.git
+cd ReverseAPK-MCP
 
 python -m venv mcp-server\.venv
 mcp-server\.venv\Scripts\python.exe -m pip install -q --upgrade pip

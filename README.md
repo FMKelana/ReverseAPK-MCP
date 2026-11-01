@@ -1,10 +1,10 @@
-# ReverseAPK
+# ReverseAPK MCP — Android APK Reverse Engineering Toolkit for AI Agents
 
-A typed [Model Context Protocol](https://modelcontextprotocol.io/) server that gives AI agents
-(Roo Code, Claude Desktop, or any MCP client) a safe, token-efficient toolkit for Android APK
-reverse engineering on **native Windows 10/11 — no Docker required**.
+ReverseAPK MCP is a typed [Model Context Protocol](https://modelcontextprotocol.io/) server that
+gives AI agents (Roo Code, Claude Desktop, or any MCP client) a safe, token-efficient toolkit for
+Android APK reverse engineering on **native Windows 10/11 — no Docker required**.
 
-ReverseAPK wraps `apktool`, `jadx`, `aapt2`, `apksigner`, `zipalign`, `adb`, `dexdump`,
+The server wraps `apktool`, `jadx`, `aapt2`, `apksigner`, `zipalign`, `adb`, `dexdump`,
 `frida`, and `ghidra` behind 35 typed tools. Every action is recorded in a session manifest,
 runs with a timeout, and is confined to an allow-listed workspace.
 
@@ -49,8 +49,8 @@ Frida and Ghidra are optional; their tools report a clean "not installed" status
 
 ```powershell
 # 1. Clone the repository
-git clone https://github.com/FMKelana/ReverseAPK.git
-cd ReverseAPK
+git clone https://github.com/FMKelana/ReverseAPK-MCP.git
+cd ReverseAPK-MCP
 
 # 2. Install Python 3.12 and JDK 17 (optional, via winget), then apktool and jadx
 powershell -ExecutionPolicy Bypass -File scripts/setup-toolchain.ps1 -InstallPrereqs
@@ -218,7 +218,7 @@ a rebuilt and signed APK, and a fidelity report.
 ## Project structure
 
 ```text
-ReverseAPK/
+ReverseAPK-MCP/
 ├─ .roomodes                  # Roo Code custom mode: apk-reverse
 ├─ .roo/                      # MCP config template, SOP rules, slash commands
 ├─ config/                    # toolchain.json (local) and toolchain.example.json
